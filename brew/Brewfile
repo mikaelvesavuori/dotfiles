@@ -15,7 +15,6 @@ brew 'yarn'
 brew 'zsh'
 brew 'wget'
 brew 'firebase-cli'
-brew 'firebase-admin'
 brew 'bramstein/webfonttools'
 brew 'woff2'
 
