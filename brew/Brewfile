@@ -15,11 +15,11 @@ brew 'yarn'
 brew 'zsh'
 brew 'wget'
 brew 'firebase-cli'
+brew 'firebase-admin'
 brew 'bramstein/webfonttools'
 brew 'woff2'
 
 # Casks
-cask 'firebase-admin'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'firefox'
