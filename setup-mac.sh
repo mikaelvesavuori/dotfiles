@@ -13,4 +13,6 @@ cd brew
 
 brew bundle
 
+cd ..
+
 sh setup-dotfiles.sh
