@@ -1,3 +1,3 @@
 echo "Set up dotfiles: Copying them from current working folder to root";
 
-cp {.bash_profile,.bashrc,.gitignore_global,.inputrc,Brewfile} ~/
+cp {dotfiles/.bash_profile,dotfiles/.bashrc,dotfiles/.gitignore_global,dotfiles/.inputrc,brew/Brewfile} ~/
