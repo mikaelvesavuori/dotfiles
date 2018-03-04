@@ -9,10 +9,14 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+cd ..
+
 cd brew
 
 brew bundle
 
 cd ..
+
+cd scripts
 
 sh setup-dotfiles.sh
