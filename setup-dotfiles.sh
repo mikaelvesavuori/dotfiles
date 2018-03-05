@@ -7,10 +7,8 @@ cp config/.inputrc ~/
 cp brew/Brewfile ~/
 
 # Bash dotfiles + Mac OSX settings
-mkdir -p ~/dotfiles/
-cp system/.alias ~/dotfiles/
-cp system/.env ~/dotfiles/
-cp system/.functions ~/dotfiles/
-cp macosx/macosdefaults.sh ~/dotfiles/
-
-source ~/.bash_profile
+mkdir -p ~/.dotfiles/
+cp system/.alias ~/.dotfiles/
+cp system/.env ~/.dotfiles/
+cp system/.functions ~/.dotfiles/
+cp macosx/macosdefaults.sh ~/.dotfiles/

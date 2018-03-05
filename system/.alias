@@ -1,5 +1,8 @@
+#!/bin/bash
+
 alias gitit="git add .;git commit -m 'Update';git push"
 
+alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 
 alias showShadows="defaults write com.apple.screencapture disable-shadow -bool false; killall SystemUIServer";
@@ -9,3 +12,14 @@ alias setScreenshotsTiff="defaults write com.apple.screencapture type tiff; kill
 alias setScreenshotsJpg="defaults write com.apple.screencapture type jpg; killall SystemUIServer";
 alias setScreenshotsPdf="defaults write com.apple.screencapture type pdf; killall SystemUIServer";
 alias setScreenshotsPng="defaults write com.apple.screencapture type png; killall SystemUIServer";
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias web="cd ~/Web"
+
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;"

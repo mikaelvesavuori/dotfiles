@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function setupWebProject() {
 	mkdir -p $1
 	touch $1/readme.md
