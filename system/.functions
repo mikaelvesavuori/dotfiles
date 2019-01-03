@@ -1,18 +1,5 @@
 #!/bin/bash
 
-function setupWebProject() {
-	mkdir -p $1
-	touch $1/readme.md
-	touch $1/index.html
-	mkdir -p $1/styles
-	touch $1/styles/main.css
-	mkdir -p $1/scripts/{js,vendor}
-	mkdir -p $1/media/{img,gfx,icons,fonts}
-	source .bashrc
-}
-
-export -f setupWebProject
-
 function removeTrashFiles() {
 	find . -name '*.DS_Store' -type f -delete
 	find . -name 'Icon?' -type f -delete
