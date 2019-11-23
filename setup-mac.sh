@@ -15,8 +15,6 @@ brew bundle
 
 cd ..
 
-# cd scripts
-
 sh setup-dotfiles.sh
 
 sh update.sh
