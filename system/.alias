@@ -2,6 +2,8 @@
 
 alias gitit="git add .;git commit -m 'Update';git push"
 
+alias composer="php /usr/local/bin/composer.phar"
+
 alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 
@@ -21,5 +23,6 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias web="cd ~/Web"
+alias ml="cd ~/ML"
 
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;"
