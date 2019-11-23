@@ -1,7 +1,7 @@
 echo "Set up dotfiles: Copying them from current working folder to root";
 
 # Root level files
-cp config/.bash_profile ~/
+cp config/.zshrc ~/
 cp config/.gitignore_global ~/
 cp config/.inputrc ~/
 cp brew/Brewfile ~/
