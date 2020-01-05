@@ -25,4 +25,4 @@ alias dt="cd ~/Desktop"
 alias web="cd ~/Web"
 alias ml="cd ~/ML"
 
-alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g;"
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; curl -o- -L https://yarnpkg.com/install.sh | bash"
