@@ -1,8 +1,15 @@
 #!/bin/bash
 
+alias gaa="git add --all"
+alias gc="git cz"
+alias gp="git push"
 alias gitit="git add .;git commit -m 'Update';git push"
 
-alias composer="php /usr/local/bin/composer.phar"
+# Make sure to alias Python 3 and not any other version
+alias python=/usr/local/bin/python3
+
+# And ensure that newer Pip is used
+alias pip=/usr/local/bin/pip3
 
 alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
