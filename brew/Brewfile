@@ -2,7 +2,7 @@
 cask_args appdir: '/Applications'
 
 # Packages
-tap 'caskroom/cask' || true
+tap 'homebrew/cask-cask' || true
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 brew 'azure-cli'
