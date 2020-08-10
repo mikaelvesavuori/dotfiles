@@ -8,7 +8,14 @@ Assumes you run Mac, but should work fine for Linux given some small configurati
 
 What they do:
 
-## Installs tools
+## Installs...
+
+### Fonts
+
+- [Fira](https://github.com/mozilla/Fira) (OTF)
+- [Powerline fonts](https://github.com/powerline/fonts)
+
+### Tools
 
 - Homebrew
 - CLI tools for AWS, Google Cloud Platform and Azure (--> homebrew)
@@ -18,9 +25,9 @@ What they do:
 - Serverless Framework globally (--> NPM)
 - Xcode
 
-### Homebrew
+#### Homebrew
 
-#### Packages
+##### Packages
 
 ```
 tap 'caskroom/cask' || true
@@ -46,7 +53,7 @@ brew 'firebase-cli'
 brew 'woff2'
 ```
 
-#### Casks
+##### Casks
 
 ```
 cask 'google-cloud-sdk'
