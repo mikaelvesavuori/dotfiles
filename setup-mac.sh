@@ -23,6 +23,7 @@ cd ..
 npm install -g serverless typescript
 
 # AWS CLI v2
+cd ~
 sudo curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 sudo rm AWSCLIV2.pkg
