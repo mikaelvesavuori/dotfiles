@@ -23,13 +23,13 @@ cd ..
 npm install -g serverless typescript
 
 # AWS CLI v2
-curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
-rm AWSCLIV2.pkg
+sudo rm AWSCLIV2.pkg
 
 # GCP gcloud CLI (reference: https://cloud.google.com/sdk/docs/quickstart-macos)
 cd ~
-curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-304.0.0-darwin-x86_64.tar.gz" -o "gcloud.zip"
+sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-304.0.0-darwin-x86_64.tar.gz" -o "gcloud.zip"
 ./google-cloud-sdk/install.sh
 gcloud components update
 rm gcloud.zip
