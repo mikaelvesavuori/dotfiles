@@ -51,7 +51,6 @@ brew 'wget'
 
 ```
 cask 'google-cloud-sdk'
-cask 'google-chrome'
 cask 'slack'
 cask 'sourcetree'
 cask 'visual-studio-code'
