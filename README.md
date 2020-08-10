@@ -24,6 +24,7 @@ What they do:
 - Yarn (--> homebrew)
 - Python 3.x (--> homebrew)
 - Serverless Framework globally (--> NPM)
+- Typescript (-->)
 - Xcode
 
 #### Homebrew

@@ -19,8 +19,8 @@ cd brew
 brew bundle
 cd ..
 
-# Serverless Framework
-npm install -g serverless
+# Serverless Framework and Typescript through NPM
+npm install -g serverless typescript
 
 # AWS CLI v2
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
