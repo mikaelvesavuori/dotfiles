@@ -1,11 +1,11 @@
 #!/bin/bash
 
-function removeTrashFiles() {
-	find . -name '*.DS_Store' -type f -delete
-	find . -name 'Icon?' -type f -delete
-	find . -name '$RECYCLE.BIN' -type f -delete
-	find . -name 'desktop.ini' -type f -delete
-	find . -name 'Thumbs.db' -type f -delete
-}
+#function removeTrashFiles() {
+#	find . -name '*.DS_Store' -type f -delete
+#	find . -name 'Icon?' -type f -delete
+#	find . -name '$RECYCLE.BIN' -type f -delete
+#	find . -name 'desktop.ini' -type f -delete
+#	find . -name 'Thumbs.db' -type f -delete
+#}
 
-export -f removeTrashFiles
+#export -f removeTrashFiles
