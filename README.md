@@ -30,10 +30,6 @@ What they do:
 ##### Packages
 
 ```
-tap 'caskroom/cask' || true
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'bramstein/webfonttools'
 brew 'azure-cli'
 brew 'terraform'
 brew 'python'
@@ -45,20 +41,14 @@ brew 'yarn'
 brew 'node'
 brew 'deno'
 brew 'yarn'
-brew 'zsh'
 brew 'docker'
-brew 'minikube'
 brew 'wget'
-brew 'firebase-cli'
-brew 'woff2'
 ```
 
-##### Casks
+##### Casks (applications)
 
 ```
 cask 'google-cloud-sdk'
-cask 'virtualbox'
-cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
 cask 'sourcetree'
@@ -67,8 +57,6 @@ cask 'figma'
 cask 'vlc'
 cask 'imageoptim'
 cask 'handbrake'
-cask 'skype'
-cask 'skypewebplugin'
 cask 'insomnia'
 cask 'lastpass'
 ```
