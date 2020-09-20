@@ -2,7 +2,6 @@
 cask_args appdir: '/Applications'
 
 # Packages
-tap 'homebrew/cask-cask' || true
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 brew 'azure-cli'
@@ -28,5 +27,4 @@ cask 'figma'
 cask 'vlc'
 cask 'imageoptim'
 cask 'handbrake'
-cask 'insomnia'
 cask 'lastpass'

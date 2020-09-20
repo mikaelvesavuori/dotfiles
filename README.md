@@ -58,7 +58,6 @@ cask 'figma'
 cask 'vlc'
 cask 'imageoptim'
 cask 'handbrake'
-cask 'insomnia'
 cask 'lastpass'
 ```
 
