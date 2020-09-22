@@ -19,6 +19,7 @@ fi
 
 # Install homebrew bundle
 echo "(Dotfiles installer) Tapping Homebrew..."
+cd dotfiles
 cd brew
 brew bundle
 cd ..
@@ -58,10 +59,16 @@ rm -rf Fira
 
 # Start laying out the dotfiles on the system
 echo "(Dotfiles installer) Laying out the dotfiles on your system..."
+cd dotfiles
 sh setup-dotfiles.sh
 
 # Update system
 echo "(Dotfiles installer) Updating..."
 sh update.sh
+
+# Run zsh compaudit
+echo "(Dotfiles installer) Zsh compaudit/compinit..."
+compaudit
+compinit -i
 
 echo "(Dotfiles installer) Done!"

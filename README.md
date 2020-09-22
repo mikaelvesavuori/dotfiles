@@ -4,7 +4,11 @@ My set of dotfiles. Obviously totally subjective but I think they are good defau
 
 Assumes you run Mac, but should work fine for Linux given some small configuration changes.
 
-**Before you do anything**, make sure to add your own `username` (usually `firstnamelastname`) at `export USERNAME=` in `/config/.zshrc`.
+## Important prep steps
+
+1. **Before you do anything**, make sure to add your own `username` (usually `firstnamelastname`) at `export USERNAME=` in `/config/.zshrc`.
+
+2. **Navigate to the root (`~`) of your computer and run the scripts, as the scripts assume you are at root level!**
 
 What they do:
 
@@ -24,7 +28,7 @@ What they do:
 - Yarn (--> homebrew)
 - Python 3.x (--> homebrew)
 - Serverless Framework globally (--> NPM)
-- Typescript (-->)
+- Typescript globally (--> NPM)
 - Xcode
 
 #### Homebrew
