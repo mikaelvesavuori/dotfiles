@@ -51,7 +51,17 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# Install Fira font (OTF version)
+# Install Fira Code font
+echo "(Dotfiles installer) Installing Fira Code font..."
+mkdir fira-code
+cd fira-code
+curl https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip -o fira-code.zip -s -L
+unzip fira-code.zip
+cp ttf/*.ttf ~/Library/Fonts/
+cd ..
+rm -rf fira-code
+
+# Install regular Fira font (OTF version)
 echo "(Dotfiles installer) Installing Fira font..."
 git clone https://github.com/mozilla/Fira.git --depth=1
 cp Fira/otf/*.otf ~/Library/Fonts/
