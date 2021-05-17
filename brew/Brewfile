@@ -15,11 +15,11 @@ brew 'yarn'
 brew 'node'
 brew 'deno'
 brew 'yarn'
-brew 'powershell'
 brew 'docker'
 brew 'wget'
 
 # Casks ("applications")
+cask 'powershell'
 cask 'google-cloud-sdk'
 cask 'slack'
 cask 'sourcetree'
