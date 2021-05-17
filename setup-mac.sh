@@ -38,7 +38,9 @@ sudo rm AWSCLIV2.pkg
 # GCP gcloud CLI (reference: https://cloud.google.com/sdk/docs/quickstart-macos)
 echo "(Dotfiles installer) Installing Google Cloud Platform gcloud CLI..."
 cd ~
-sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-304.0.0-darwin-x86_64.tar.gz" -o "gcloud.zip"
+# Get latest version number from: https://cloud.google.com/sdk/docs/install
+#sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-340.0.0-darwin-x86_64.tar.gz" -o "gcloud.zip" # <-- Intel
+sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-340.0.0-darwin-arm.tar.gz" -o "gcloud.zip"     # <-- ARM (M1)
 ./google-cloud-sdk/install.sh
 gcloud components update
 rm gcloud.zip
