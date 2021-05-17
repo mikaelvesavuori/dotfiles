@@ -20,7 +20,6 @@ brew 'wget'
 
 # Casks ("applications")
 cask 'powershell'
-cask 'google-cloud-sdk'
 cask 'slack'
 cask 'sourcetree'
 cask 'visual-studio-code'
