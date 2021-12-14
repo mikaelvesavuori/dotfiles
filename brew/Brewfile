@@ -14,7 +14,6 @@ brew 'tree'
 brew 'yarn'
 brew 'node'
 brew 'deno'
-brew 'yarn'
 brew 'docker'
 brew 'wget'
 
