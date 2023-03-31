@@ -36,6 +36,7 @@ What they do:
 ##### Packages
 
 ```
+brew 'node'
 brew 'azure-cli'
 brew 'terraform'
 brew 'python'
@@ -44,10 +45,9 @@ brew 'git-lfs'
 brew 'vim'
 brew 'tree'
 brew 'yarn'
-brew 'node'
 brew 'deno'
 brew 'yarn'
-brew 'docker'
+brew 'podman'
 brew 'wget'
 ```
 
@@ -56,13 +56,11 @@ brew 'wget'
 ```
 cask 'google-cloud-sdk'
 cask 'slack'
-cask 'sourcetree'
 cask 'visual-studio-code'
 cask 'figma'
 cask 'vlc'
 cask 'imageoptim'
 cask 'handbrake'
-cask 'lastpass'
 ```
 
 ## Styling
