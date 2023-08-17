@@ -4,6 +4,9 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Remove the auto-hiding Dock delay
+defaults write com.apple.Dock autohide-delay -float 0; killall Dock
+
 # Save screenshots to the desktop
 # defaults write com.apple.screencapture location -string “$HOME/Desktop”
 
