@@ -1,7 +1,6 @@
 #!/bin/bash
 
-alias gaa="git add --all"
-alias gc="git cz"
+alias gaa="git add ."
 alias gp="git push"
 alias gitit="git add .;git commit -m 'Update';git push"
 
@@ -14,13 +13,13 @@ alias pip=/usr/local/bin/pip3
 alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 
-alias showShadows="defaults write com.apple.screencapture disable-shadow -bool false; killall SystemUIServer";
+alias showShadows="defaults write com.apple.screencapture disable-shadow -bool false; killall SystemUIServer"
 alias hideShadows="defaults write com.apple.screencapture disable-shadow -bool true; killall SystemUIServer"
 
-alias setScreenshotsTiff="defaults write com.apple.screencapture type tiff; killall SystemUIServer";
-alias setScreenshotsJpg="defaults write com.apple.screencapture type jpg; killall SystemUIServer";
-alias setScreenshotsPdf="defaults write com.apple.screencapture type pdf; killall SystemUIServer";
-alias setScreenshotsPng="defaults write com.apple.screencapture type png; killall SystemUIServer";
+alias setScreenshotsTiff="defaults write com.apple.screencapture type tiff; killall SystemUIServer"
+alias setScreenshotsJpg="defaults write com.apple.screencapture type jpg; killall SystemUIServer"
+alias setScreenshotsPdf="defaults write com.apple.screencapture type pdf; killall SystemUIServer"
+alias setScreenshotsPng="defaults write com.apple.screencapture type png; killall SystemUIServer"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -30,6 +29,5 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias web="cd ~/Web"
-alias ml="cd ~/ML"
 
 alias update="sudo softwareupdate -i -a; npm update -g; brew cleanup; brew update; brew upgrade; gcloud components update"

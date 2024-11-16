@@ -1,8 +1,0 @@
-fileignoreconfig:
-- filename: backup-dotfiles.sh
-  checksum: a3005a434a95922a8ffb98990be2830896bd08381d69d849574aca163dff4851
-  ignore_detectors: []
-- filename: config/.zshrc
-  checksum: d443d6c97c63dfdd09ce668155cc4aaf93b5f05a0138e730de110d349c08af97
-  ignore_detectors: []
-scopeconfig: []

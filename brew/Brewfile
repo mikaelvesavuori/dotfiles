@@ -1,11 +1,3 @@
-# Install
-cask_args appdir: '/Applications'
-
-# Packages
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-brew 'node'
-brew 'azure-cli'
 brew 'terraform'
 brew 'python'
 brew 'git'
@@ -16,12 +8,4 @@ brew 'yarn'
 brew 'deno'
 brew 'podman'
 brew 'wget'
-
-# Casks ("applications")
-cask 'powershell'
-cask 'slack'
-cask 'visual-studio-code'
-cask 'figma'
-cask 'vlc'
-cask 'imageoptim'
-cask 'handbrake'
+brew 'gh'

@@ -1,5 +1,10 @@
 echo "(Dotfiles installer) Setting up Mac with Xcode command-line utilities, Homebrew, Homebrew packages/casks, Oh My Zsh, and dotfiles."
 
+# Start laying out the dotfiles on the system
+echo "(Dotfiles installer) Laying out the dotfiles on your system..."
+cd dotfiles
+bash dotfiles.sh
+
 cd ~
 
 # Xcode Command-Line tools
@@ -19,14 +24,14 @@ fi
 
 # Install homebrew bundle
 echo "(Dotfiles installer) Tapping Homebrew..."
-cd dotfiles
-cd brew
 brew bundle
-cd ..
 
-# Serverless Framework and Typescript through NPM
-echo "(Dotfiles installer) Installing Serverless Framework and Typescript globally through NPM..."
-npm install -g serverless typescript
+# Install Volta
+curl https://get.volta.sh | bash
+volta install node
+
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # AWS CLI v2
 echo "(Dotfiles installer) Installing AWS CLI v2..."
@@ -38,12 +43,12 @@ sudo rm AWSCLIV2.pkg
 # GCP gcloud CLI (reference: https://cloud.google.com/sdk/docs/quickstart-macos)
 echo "(Dotfiles installer) Installing Google Cloud Platform gcloud CLI..."
 cd ~
-# Get latest version number from: https://cloud.google.com/sdk/docs/install
-#sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-340.0.0-darwin-x86_64.tar.gz" -o "gcloud.zip" # <-- Intel
-sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-340.0.0-darwin-arm.tar.gz" -o "gcloud.zip"     # <-- ARM (M1)
+sudo curl "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-424.0.0-darwin-arm.tar.gz" -o "gcloud.tar.gz" # <-- ARM (M1, M2)
+tar -xvf gcloud.tar.gz
 ./google-cloud-sdk/install.sh
+exec zsh -l
 gcloud components update
-rm gcloud.zip
+rm gcloud.tar.gz
 
 # Install Powerline fonts
 echo "(Dotfiles installer) Installing Powerline fonts..."
@@ -57,7 +62,7 @@ rm -rf fonts
 echo "(Dotfiles installer) Installing Fira Code font..."
 mkdir fira-code
 cd fira-code
-curl https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip -o fira-code.zip -s -L
+curl https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip -o fira-code.zip -s -L
 unzip fira-code.zip
 cp ttf/*.ttf ~/Library/Fonts/
 cd ..
@@ -69,14 +74,9 @@ git clone https://github.com/mozilla/Fira.git --depth=1
 cp Fira/otf/*.otf ~/Library/Fonts/
 rm -rf Fira
 
-# Start laying out the dotfiles on the system
-echo "(Dotfiles installer) Laying out the dotfiles on your system..."
-cd dotfiles
-sh setup-dotfiles.sh
-
 # Update system
 echo "(Dotfiles installer) Updating..."
-sh update.sh
+bash update.sh
 
 # Run zsh compaudit
 echo "(Dotfiles installer) Zsh compaudit/compinit..."
